@@ -9,14 +9,14 @@ timezone: Asia/Seoul
 url: "https://haangman.github.io"
 baseurl: "/J-Blog-Fashion"
 
-google_site_verification: ""
+google_site_verification: "z9a9RSK9CLJnq-mDNm8beC5UemOO2czYXSdvQpHql4U"
 
 giscus:
-  enabled: false
+  enabled: true
   repo: "haangman/J-Blog-Fashion"
-  repo_id: ""
+  repo_id: "R_kgDOSg4JHw"
   category: "Announcements"
-  category_id: ""
+  category_id: "DIC_kwDOSg4JH84C9T6X"
   mapping: "pathname"
   strict: "0"
   reactions_enabled: "1"
