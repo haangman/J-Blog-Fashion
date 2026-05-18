@@ -1,47 +1,94 @@
+# V8-B: minimal-mistakes 테마 — 패션 잡지 무드 (splash overlay 이미지 + 핑크/로즈 톤)
+
+# remote_theme 으로 GitHub Pages 빌드 (Gemfile 에 jekyll-remote-theme 가 github-pages 에 이미 포함)
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+# minimal_mistakes skin — 패션·뷰티에 어울리는 톤
+# 선택지: default | air | aqua | contrast | dark | dirt | mint | neon | plum | sunrise
+minimal_mistakes_skin: "neon"   # 핑크/마젠타 액센트 — 패션·뷰티
+
 # Site
 title: "fashion log"
-description: "패션과 뷰티 — 요즘 세계가 보는 것들"
-author: haangman
-lang: ko-KR
-timezone: Asia/Seoul
-
-# URL
+title_separator: "—"
+subtitle: "패션과 뷰티 — 요즘 세계가 보는 것들"
+name: "haangman"
+description: "글로벌 패션·뷰티 트렌드를 한국 시선으로 짧게 정리하는 블로그"
 url: "https://haangman.github.io"
 baseurl: "/J-Blog-Fashion"
-#<meta name="google-site-verification" content="GDFWz-J9PipAtKXR7O3JKO80YJ1TP1cfAZtcc_FqVB0" />
+repository: "haangman/J-Blog-Fashion"
+locale: "ko-KR"
+words_per_minute: 200
+
+# Author profile (사이드바)
+author:
+  name: "haangman"
+  avatar: "/assets/img/avatar.png"
+  bio: "글로벌 패션·뷰티를 한국 시선으로 짧게 정리합니다."
+  location: "Seoul"
+
+# GSC verification — jekyll-seo-tag 가 자동으로 meta 태그 출력
 google_site_verification: "GDFWz-J9PipAtKXR7O3JKO80YJ1TP1cfAZtcc_FqVB0"
 
+# 댓글 — minimal-mistakes 빌트인 giscus 사용 (우리 _includes/comments.html 안 써도 됨)
+comments:
+  provider: "giscus"
 giscus:
-  enabled: true
-  repo: "haangman/J-Blog-Fashion"
   repo_id: "R_kgDOSg4JHw"
   category: "Announcements"
   category_id: "DIC_kwDOSg4JH84C9T6X"
-  mapping: "pathname"
-  strict: "0"
+  discussion_term: "pathname"
   reactions_enabled: "1"
-  emit_metadata: "0"
-  input_position: "bottom"
   theme: "preferred_color_scheme"
-  lang: "ko"
+  strict: "0"
+  input_position: "bottom"
+  lazy_loading: "true"
+
+# Reading time, share, related posts
+read_time: true
+share: true
+related: true
+show_date: true
 
 # Build
-theme: minima
 markdown: kramdown
 permalink: /:year/:month/:day/:slug/
-
 paginate: 10
 paginate_path: "/page:num/"
+
+# Default front matter — 모든 글에 자동 적용
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      classes: wide   # 본문 폭 넓게 (잡지 느낌)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
+# Exclude
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
   - .gitignore
   - vendor/
+  - node_modules/

@@ -1,0 +1,12 @@
+# minimal-mistakes 상단 마스트헤드 네비게이션
+main:
+  - title: "홈"
+    url: /
+  - title: "카테고리"
+    url: /categories/
+  - title: "태그"
+    url: /tags/
+  - title: "트렌드"
+    url: /J-Blog/
+  - title: "AI"
+    url: /J-Blog-AI/
