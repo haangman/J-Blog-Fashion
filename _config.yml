@@ -8,8 +8,8 @@ timezone: Asia/Seoul
 # URL
 url: "https://haangman.github.io"
 baseurl: "/J-Blog-Fashion"
-
-google_site_verification: "z9a9RSK9CLJnq-mDNm8beC5UemOO2czYXSdvQpHql4U"
+#<meta name="google-site-verification" content="GDFWz-J9PipAtKXR7O3JKO80YJ1TP1cfAZtcc_FqVB0" />
+google_site_verification: "GDFWz-J9PipAtKXR7O3JKO80YJ1TP1cfAZtcc_FqVB0"
 
 giscus:
   enabled: true
