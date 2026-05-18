@@ -1,0 +1,47 @@
+# Site
+title: "fashion log"
+description: "패션과 뷰티 — 요즘 세계가 보는 것들"
+author: haangman
+lang: ko-KR
+timezone: Asia/Seoul
+
+# URL
+url: "https://haangman.github.io"
+baseurl: "/J-Blog-Fashion"
+
+google_site_verification: ""
+
+giscus:
+  enabled: false
+  repo: "haangman/J-Blog-Fashion"
+  repo_id: ""
+  category: "Announcements"
+  category_id: ""
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "preferred_color_scheme"
+  lang: "ko"
+
+# Build
+theme: minima
+markdown: kramdown
+permalink: /:year/:month/:day/:slug/
+
+paginate: 10
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - vendor/
