@@ -7,6 +7,6 @@ main:
   - title: "태그"
     url: /tags/
   - title: "트렌드"
-    url: /J-Blog/
+    url: "https://haangman.github.io/J-Blog/"
   - title: "AI"
-    url: /J-Blog-AI/
+    url: "https://haangman.github.io/J-Blog-AI/"

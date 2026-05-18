@@ -1,8 +1,8 @@
-<!-- minimal-mistakes 4.26.x 기본 footer.html 패턴을 복사. footer/custom.html hook 보존. -->
+<!-- minimal-mistakes 4.26.x 기본 footer.html 복사 — footer/custom.html include 는 빼야 함.
+     theme 의 _layouts/default.html 이 이미 {% include footer/custom.html %} 를
+     한 번 호출하므로, 여기서 또 호출하면 busuanzi 카운터가 두 줄로 노출된다. -->
 <div class="page__footer">
   <footer>
-    {% include footer/custom.html %}
-
     <div class="page__footer-follow">
       <ul class="social-icons">
         {% if site.data.ui-text[site.locale].follow_label %}

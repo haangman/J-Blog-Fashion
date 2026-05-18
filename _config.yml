@@ -84,6 +84,19 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
+# _pages 디렉토리 (categories/tags 같은 archive 페이지) 포함
+include:
+  - _pages
+
+# minimal-mistakes 의 categories/tags layout 이 archive 페이지를 그릴 때 사용하는 경로 설정.
+# GitHub Pages 는 jekyll-archives 미지원 → liquid 방식.
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
 # Exclude
 exclude:
   - README.md
