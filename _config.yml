@@ -27,7 +27,7 @@ author:
   location: "Seoul"
 
 # GSC verification — jekyll-seo-tag 가 자동으로 meta 태그 출력
-<meta name="google-site-verification" content="z9a9RSK9CLJnq-mDNm8beC5UemOO2czYXSdvQpHql4U" />
+#<meta name="google-site-verification" content="z9a9RSK9CLJnq-mDNm8beC5UemOO2czYXSdvQpHql4U" />
 google_site_verification: "z9a9RSK9CLJnq-mDNm8beC5UemOO2czYXSdvQpHql4U"
 
 # 댓글 — minimal-mistakes 빌트인 giscus 사용 (우리 _includes/comments.html 안 써도 됨)
